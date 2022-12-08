@@ -1,0 +1,261 @@
+body{
+    background-image: url("bg.jpg");
+    background-size: 100%;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    width: 1150px;
+    height: 1000px;
+    background-color:white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;  /*fr means fraction, the first column occupies 1/3, the second row occupies 2/3 in this case*/
+    margin-top: -60px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.container .left{
+    position: relative;
+    background-color: #D8D089;
+    padding: 40px;
+}
+
+.container .right{
+    position: relative;
+    background-color: #EDE9CA;
+    padding: 40px;
+}
+
+#topbg{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 1150px;
+    height: 300px;
+}
+
+.pfp {
+    background-color: #363844;
+    border-radius: 50%;
+    border: 15px solid;
+    border-color:#363844;
+    width:250px;
+    height:250px;
+    margin-top: -200px;
+    margin-left: 10px;
+}
+
+.border{
+    border: 1.5px solid #ccc;
+    border-color: #D8D089;
+    width: 620px;
+    height: 100px;
+    text-align: center;
+    position: absolute;
+    margin-left: 510px;
+    margin-top: -265px;
+    margin-right: -1000px;
+    margin-bottom: 100px;
+}
+
+#small{
+    font-size: 16px;
+    color: #D8D089;
+    display: inline-block;
+    transform: translateY(-65px);  /*This moves the words down*/
+    background: #363844;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#name{
+    font-size: 45px;
+    color: white;
+    transform: translateY(-20px);
+}
+
+.about_me, .contact_info, .education, .languages, .skills, .interests, .achievements{
+    padding-top: 10px;
+}
+
+ul{
+    position: relative;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0px 0px -40px;  /*if x x x x, order of margin is top, right, bottom, left; if only x x, order of margin is top and bottom  */
+    cursor: pointer;
+}
+
+ul li .icon{
+    display: inline-block;
+    width: 30px;
+    color: black;
+}
+
+.text{
+    font-size: 18px;
+}
+
+.location a p{
+    display:none;
+}
+
+.location a:hover p{
+    position: absolute;
+    display:inline-block;
+    width:max-content;
+    font-size: 10px;
+    background-color: #D8D089;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.about_me{
+    padding-top: 20px;
+}
+
+#about_me{
+    font-size: 20px;
+}
+
+.heading_shape1{
+    border-radius: 71% 19% 100% 0% / 0% 100% 0% 100% ;  /*The / is used to separate the values of the horizontal and vertical radii. I used https://9elements.github.io/fancy-border-radius/ to generate the shape.*/
+    background-color: #363844;
+    width: 245px;
+    height: 55px;
+    margin-left: -40px;
+}
+
+.heading_shape2{
+    border-radius: 71% 19% 100% 0% / 0% 100% 0% 100% ;
+    background-color: #363844;
+    width: 315px;
+    height: 55px;
+    margin-left: -40px;
+}
+
+.heading_shape3{
+    border-radius: 71% 19% 100% 0% / 0% 100% 0% 100% ;
+    background-color: #363844;
+    width: 275px;
+    height: 55px;
+    margin-left: -40px;
+}
+
+.heading_shape4{
+    border-radius: 71% 19% 100% 0% / 0% 100% 0% 100% ;
+    background-color: #363844;
+    width: 275px;
+    height: 55px;
+    margin-top: 50px;
+    margin-left: -40px;
+}
+
+.heading_shape5{
+    border-radius: 71% 19% 100% 0% / 0% 100% 0% 100% ;
+    background-color: #363844;
+    width: 425px;
+    height: 55px;
+    margin-top: 50px;
+    margin-left: -40px;
+}
+
+.heading_shape6{
+    border-radius: 71% 19% 100% 0% / 0% 100% 0% 100% ;
+    background-color: #363844;
+    width: 250px;
+    height: 55px;
+    margin-top: 50px;
+    margin-left: -40px;
+}
+
+.heading{
+    color: white;
+    letter-spacing: 2px;
+    padding-left: 45px;
+    padding-top: 15px;
+}
+
+.education ul li{
+    list-style: none;
+    margin-left: -60px;
+}
+
+#year{
+    color: darkred;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 0px 0px 25px;
+}
+
+#programme {
+    color: #363844;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px 0px 0px 25px;
+}
+
+#school{
+    color: black;
+    font-size: 20px;
+    margin: 0px 0px 0px 25px;
+}
+
+.langs_circle{
+    background-color: white;
+    border-radius: 50%;
+    border: 8px solid;
+    border-color: #363844;
+    width:90px;
+    height:90px;
+    margin-top: 25px;
+    margin-right: 60px;
+    display: inline-block;
+}
+
+#percentage{
+    font-size: 27px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+#langs{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-left: 21px;
+}
+
+.box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .h4{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+progress{
+    width:500px; 
+    height: 30px;
+    margin-left: 40px;
+}
+
+.skill_types{
+    font-weight: bold;
+}
